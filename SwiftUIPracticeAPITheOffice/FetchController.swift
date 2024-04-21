@@ -12,22 +12,21 @@ struct FetchController {
         case badURL, badResponse
     }
     
-    private let baseURL = URL(string: "https://akashrajpurohit.github.io/the-office-api")!
+    private let baseURL = URL(string: "https://officeapi.akashrajpurohit.com")!
     
     func fetchQuote() async throws -> Quote {
-        let quoteURL = baseURL.appending(path: "quotes/random")
-        var quoteComponents = URLComponents(url: quoteURL, resolvingAgainstBaseURL: true)
+        let quoteURL = baseURL.appendingPathComponent("quote/random")
         
-        guard let fetchURL = quoteComponents?.url else {
-            throw NetworkError.badURL
-        }
+        guard let fetchURL = URL(string: quoteURL.absoluteString) else {
+                    throw NetworkError.badURL
+                }
         
         let (data, response) = try await URLSession.shared.data(from: fetchURL)
         
-        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw NetworkError.badResponse
         }
-        
+                
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let quote = try decoder.decode(Quote.self, from: data)
