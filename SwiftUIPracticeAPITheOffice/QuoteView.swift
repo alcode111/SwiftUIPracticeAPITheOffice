@@ -80,6 +80,7 @@ struct QuoteView: View {
                                 .foregroundStyle(.white)
                                 .padding()
                                 .background(.black)
+                                .fontWeight(.semibold)
                                 .clipShape(.rect(cornerRadius: 8))
                         }
                         
