@@ -12,7 +12,7 @@ class ViewModel: ObservableObject {
     enum Status {
         case notStarted
         case fetching
-        case success(data: (Quote))
+        case success(data: Quote)
         case failed(error: Error)
     }
     
@@ -29,6 +29,7 @@ class ViewModel: ObservableObject {
         
         do {
             let quote = try await controller.fetchQuote()
+            status = .success(data: quote)
         } catch {
             status = .failed(error: error)
         }

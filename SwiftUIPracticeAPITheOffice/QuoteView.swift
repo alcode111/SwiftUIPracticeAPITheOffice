@@ -21,7 +21,6 @@ struct QuoteView: View {
                         width: geo.size.width * 2.7,
                         height: geo.size.height * 1.34)
                 
-                
                 VStack {
                     VStack {
                         Spacer(minLength: 140)
@@ -37,11 +36,11 @@ struct QuoteView: View {
                                     ProgressView()
                                 }
                                 
-//                                Text(data.character) {
-//                                    .foregroundStyle(.white)
-//                                    .padding(10)
-//                                    .frame(maxWidth: .infinity)
-//                                    .background(.ultraThinMaterial)
+                                Text(data.character)
+                                    .foregroundStyle(.white)
+                                    .padding(10)
+                                    .frame(maxWidth: .infinity)
+                                    .background(.ultraThinMaterial)
                             }
                             .frame(
                                 width: geo.size.width / 1.1,
