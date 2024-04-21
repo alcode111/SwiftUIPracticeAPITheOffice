@@ -28,7 +28,9 @@ struct FetchController {
             throw NetworkError.badResponse
         }
         
-        let quote = try JSONDecoder().decode(Quote.self, from: data)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let quote = try decoder.decode(Quote.self, from: data)
         
         return quote
     }
