@@ -8,7 +8,7 @@ This little project is to showcase practice getting data from an API and using i
 
 ## Features
 
-- **Get Random Quotes**: You can tap on that button and display a quote from that show: you will also see an image of the character who said it and their name.
+- **Get Random Quotes**: You can tap on a button and display a quote from that show: you will also see an image of the character who said it and their name.
 
 ## Stretch Goals
 
