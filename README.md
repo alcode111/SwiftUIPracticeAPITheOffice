@@ -1,4 +1,4 @@
-# Currency Exchange App
+# The Office Quotes
 
 <img src="the-office-quotes.png" alt="The Office Cast" width="800">
 
