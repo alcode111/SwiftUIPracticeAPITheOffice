@@ -38,7 +38,7 @@ struct QuoteView: View {
                                         }
                                         
                                         Text(data.character)
-                                            .foregroundStyle(.black)
+                                            .foregroundStyle(.white)
                                             .fontWeight(.bold)
                                             .padding(10)
                                             .frame(maxWidth: .infinity)
