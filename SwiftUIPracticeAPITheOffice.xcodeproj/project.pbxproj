@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		ECEEC0CD2BD53E6200A180DE /* SwiftUIPracticeAPITheOfficeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEC0CC2BD53E6200A180DE /* SwiftUIPracticeAPITheOfficeApp.swift */; };
-		ECEEC0CF2BD53E6200A180DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEC0CE2BD53E6200A180DE /* ContentView.swift */; };
 		ECEEC0D12BD53E6400A180DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEEC0D02BD53E6400A180DE /* Assets.xcassets */; };
 		ECEEC0D42BD53E6400A180DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEEC0D32BD53E6400A180DE /* Preview Assets.xcassets */; };
+		ECEEC0DC2BD5405600A180DE /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEC0DB2BD5405600A180DE /* QuoteView.swift */; };
+		ECEEC0DE2BD5406000A180DE /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEC0DD2BD5406000A180DE /* QuoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECEEC0C92BD53E6200A180DE /* SwiftUIPracticeAPITheOffice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPracticeAPITheOffice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEEC0CC2BD53E6200A180DE /* SwiftUIPracticeAPITheOfficeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeAPITheOfficeApp.swift; sourceTree = "<group>"; };
-		ECEEC0CE2BD53E6200A180DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECEEC0D02BD53E6400A180DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECEEC0D32BD53E6400A180DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECEEC0DB2BD5405600A180DE /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		ECEEC0DD2BD5406000A180DE /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				ECEEC0CC2BD53E6200A180DE /* SwiftUIPracticeAPITheOfficeApp.swift */,
-				ECEEC0CE2BD53E6200A180DE /* ContentView.swift */,
+				ECEEC0DB2BD5405600A180DE /* QuoteView.swift */,
+				ECEEC0DD2BD5406000A180DE /* QuoteModel.swift */,
 				ECEEC0D02BD53E6400A180DE /* Assets.xcassets */,
 				ECEEC0D22BD53E6400A180DE /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECEEC0CF2BD53E6200A180DE /* ContentView.swift in Sources */,
+				ECEEC0DE2BD5406000A180DE /* QuoteModel.swift in Sources */,
 				ECEEC0CD2BD53E6200A180DE /* SwiftUIPracticeAPITheOfficeApp.swift in Sources */,
+				ECEEC0DC2BD5405600A180DE /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
