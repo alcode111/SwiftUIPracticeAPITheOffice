@@ -1,6 +1,6 @@
 # Currency Exchange App
 
-<img src="the-office-quotes" alt="The Office Cast" width="800">
+<img src="the-office-quotes.png" alt="The Office Cast" width="800">
 
 ## Description
 
