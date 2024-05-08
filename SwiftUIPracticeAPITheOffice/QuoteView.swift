@@ -70,7 +70,6 @@ struct QuoteView: View {
                         Spacer()
                         
                         Button {
-                            print("Button tapped")
                             Task {
                                 await vm.getData()
                             }

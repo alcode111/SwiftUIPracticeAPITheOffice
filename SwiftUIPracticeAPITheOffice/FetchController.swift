@@ -17,11 +17,7 @@ struct FetchController {
     func fetchQuote() async throws -> Quote {
         let quoteURL = baseURL.appendingPathComponent("quote/random")
         
-        guard let fetchURL = URL(string: quoteURL.absoluteString) else {
-                    throw NetworkError.badURL
-                }
-        
-        let (data, response) = try await URLSession.shared.data(from: fetchURL)
+        let (data, response) = try await URLSession.shared.data(from: quoteURL)
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw NetworkError.badResponse
